@@ -1,0 +1,194 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+		<link rel="stylesheet" type="text/css" href="resources/css/main.css">
+		<link href='http://fonts.googleapis.com/css?family=Alex+Brush' rel='stylesheet' type='text/css'>
+		
+		<title>Nick & Gerhard Wedding</title>
+		
+		<script type='text/javascript' src='resources/js/jquery-1.8.3.min.js'></script>
+		<script type='text/javascript' src='resources/js/knockout-2.2.1.js'></script>
+		<script type='text/javascript' src='resources/js/MainViewModel.js'></script>
+		
+		<script>
+			$(document).ready(function() {
+				ko.applyBindings(new MainViewModel()); // This makes Knockout get to work
+			});
+		</script>
+		
+	</head>
+	<body>
+		<div id="page">
+			<div id="header">
+				<div id="headerTitle">
+					<span class="header">Nicolene Janse van Vuuren</span>
+					<br>
+					<span class="header">&</span>
+					<br>
+					<span class="header">Gerhardus Petrus Mostert</span>
+				</div>
+			</div>
+			<br>
+			<div id="content">
+				<div id="aboutUs" data-bind="visible: showAboutUs">
+					<div class="fadedBackground boxShadow">
+						<span>Both from small towns, we moved to the city to create our own lives. We met on the way out to a metal club, joined by his best friend and my sister. It turned out that the company was just too good not to find out where this might go.</span>
+						<br>
+						<br>
+						<span>There was a connection that was unmistakable, that something special we where both looking for. Over the next couple of years we became best friends, sharing our lives, hopes and dreams.</span>
+						<br>
+						<br>
+						<span>Then one sunset afternoon, on a cruise ship over a big lake, came that magical moment when he went down on one knee to ask "the BIG question". And the rest is not as they say history, but the beginning of a wonderful new life for us.</span>
+						<br>
+						<br>
+						<span>"Meeting you was fate, becoming your friend was a choice, but falling in love with you was beyond my control" ..Anonymous</span>
+						<br>
+						<br>
+						<span>We have found the person that does not just say I love you, but the person that means it every time. The person that we want to go to bed with every night and wake up next to every morning. This is our beginning, our start to something wonderful.</span>
+					</div>
+					<br>
+					<div>
+						<div id="imageDescription">This picture was taken minutes after proposing, thank you random stranger for capturing the moment :)</div>
+						<div>
+							<img class="boxShadow" src="resources/image/Image1.jpg">
+						</div>
+					</div>
+				</div>
+				<div id="aboutVenue" data-bind="visible: showAboutVenue">
+					<div class="fadedBackground boxShadow">
+						<span class="heading">Villa Tuscana Wedding Village</span>
+						<br>
+						<br>
+						<span>Situates in Midrand Johannesburg, this is an exquisite venue with beautiful gardens and breathtaking buildings. The venue has been around for just over 10 years and specialises in events such as weddings.</span>
+						<br>
+						<br>
+						<span>Accommodation is available on the venue premises, please contact the establishment and use the couples names as reference for your bookings.</span>
+						<br>
+						<br>
+						<span>Phone: (011) 315 8326</span>
+					</div>
+					<br>
+					<img class="boxShadow" src="resources/image/Image2.png">
+					<br>
+					<br>
+					<div class="fadedBackground boxShadow smallText">
+						<span><strong>Directions from Johannesburg</strong></span>
+						<br>
+						<span>Take the N1 North towards Pretoria</span>
+						<br>
+						<span>Take exit 108 for M39/Allandale Road towards Midrand/Grand Central Airport</span>
+						<br>
+						<span>Follow the signs for Grand Central/Kempton when this road forks  and drive under the bridge</span>
+						<br>
+						<span>Get into the left hand lane after the bridge</span>
+						<br>
+						<span>At the first robot turn left onto the R101</span>
+						<br>
+						<span>Turn left at the third set of robots into Johnnic Boulevard</span>
+						<br>
+						<span>Turn left into the first road (Lupton)</span>
+						<br>
+						<span>Follow the curves of the road that will lead you into Pendulum Road</span>
+						<br>
+						<span>Midrand Conference Centre is on the left, Villa Tuscana Wedding Village on the right</span>
+						<br>
+						<br>
+						<span><strong>Directions from Pretoria</strong></span>
+						<br>
+						<span>Take the N1 towards Johannesburg</span>
+						<br>
+						<span>Take exit 111 New Road off ramp towards M71/Grand Central Airport/Midrand</span>
+						<br>
+						<span>Turn left at the robot into New Road</span>
+						<br>
+						<span>Turn right onto the R101</span>
+						<br>
+						<span>Turn right at the fourth set of robots into Johnnic Boulevard</span>
+						<br>
+						<span>Turn left into the first road (Lupton)</span>
+						<br>
+						<span>Follow the curves of the road that will lead you into Pendulum Road</span>
+						<br>
+						<span>Midrand Conference Centre is on the left, Villa Tuscana Wedding Village on the right</span>
+						<br>
+						<br>
+						<span><strong>GPS co-ordinates</strong></span>
+						<br>
+						<span>26°00'18.29"S 28°07'53.67"E</span>
+					</div>
+				</div>
+				<div id="rsvp" data-bind="visible: showRSVP">
+					<div class="fadedBackground boxShadow">
+						<span>The date is <strong>21 March 2014</strong></span>
+						<br>
+						<br>
+						<span>Arrival <strong>15:00</strong> for <strong>15:30</strong></span>
+						<br>
+						<br>
+						<span>We would love for you to join us, so please RSVP before 1 December 2013.</span>
+						<br>
+						<span>Reply to the original email with your partner's (or +1's) name.</span>
+						<br>
+						<br>
+						<span class="underline"><strong>Additional Info</strong></span>
+						<br>
+						<span>Large open parking for ceremony/reception on venue premises</span>
+						<br>
+						<span>Please leave the little ones at home :)</span>
+					</div>
+					<br>
+					<img class="boxShadow" src="resources/image/Image3.jpg">
+				</div>
+				<div id="more" data-bind="visible: showMore">
+					<img class="boxShadow" src="resources/image/Image4.jpg">
+					<br>
+					<br>
+					<div class="fadedBackground boxShadow">
+						<span><strong>1 Corinthians 13</strong></span>
+						<br>
+						<span>
+						4 Love is patient, love is kind. It does not envy, it does not boast, it is not proud. 
+						5 It is not rude, it is not self-seeking, it is not easily angered, it keeps no record of wrongs. 
+						6 Love does not delight in evil but rejoices with the truth. 
+						7 It always protects, always trusts, always hopes, always perseveres. 
+						8 Love never fails. But where there are prophecies, they will cease; where there are tongues, they will be stilled; where there is knowledge, it will pass away. 
+						9 For we know in part and we prophesy in part, 
+						10 but when perfection comes, the imperfect disappears. 
+						11 When I was a child, I talked like a child, I thought like a child, I reasoned like a child. When I became a man, I put childish ways behind me. 
+						12 Now we see but a poor reflection as in a mirror; then we shall see face to face. Now I know in part; then I shall know fully, even as I am fully known. 
+						13 And now these three remain: faith, hope and love. But the greatest of these is love.
+						</span>
+					</div>
+					<br>
+					<div class="fadedBackground boxShadow">
+						<span><strong>1 Thessalonians 5</strong></span>
+						<br>
+						<span>
+						[16] Always rejoice. 
+						[17] Pray without ceasing. 
+						[18] In all things give thanks; for this is the will of God in Christ Jesus concerning you all. 
+						[19] Extinguish not the spirit. 
+						[20] Despise not prophecies.
+						[21] But prove all things; hold fast that which is good. 
+						[22] From all appearance of evil refrain yourselves. 
+						[23] And may the God of peace himself sanctify you in all things; that your whole spirit, and soul, and body, may be preserved blameless in the coming of our Lord Jesus Christ. 
+						[24] He is faithful who hath called you, who also will do it. 
+						[25] Brethren, pray for us. 
+						[26] Salute all the brethren with a holy kiss. 
+						[27] I charge you by the Lord, that this epistle be read to all the holy brethren. 
+						[28] The grace of our Lord Jesus Christ be with you. Amen.
+						</span>
+					</div>
+				</div>
+			</div>
+			<br>
+			<div id="menu">
+				<div class="menuItem" id="page1" data-bind="click: pageHandler.bind($data,'page1')">Nicky & Gerhard</div>
+				<div class="menuItem" id="page2" data-bind="click: pageHandler.bind($data,'page2')">Venue & Accommodation</div>
+				<div class="menuItem" id="page3" data-bind="click: pageHandler.bind($data,'page3')">RSVP</div>
+				<div class="menuItem" id="page4" data-bind="click: pageHandler.bind($data,'page4')">More</div>
+			</div>
+		</div>
+	</body>
+</html>
